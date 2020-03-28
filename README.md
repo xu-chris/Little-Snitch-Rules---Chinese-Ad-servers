@@ -5,7 +5,6 @@ This repository utilizes the vokins-vhost host list of Chinese ad servers which 
 This repository is gratefully using the resources of these open source heroes:
 - [yHosts of vokins](https://github.com/vokins/yhosts/)
 - [Little Snitch rule groups of Steve Black's hosts file (I gratefully used the converter script here)](https://github.com/naveednajam/Little-Snitch---Rule-Groups)
-- 
 
 ## Subscribe to the Little Snitch rules
 Please read here: https://help.obdev.at/littlesnitch/lsc-rule-group-subscriptions
