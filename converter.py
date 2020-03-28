@@ -4,7 +4,6 @@ Little snitch rules to block adware and malware websites.
 
 # Standard library imports
 import requests
-import io
 import re
 import json
 
@@ -17,7 +16,9 @@ class GenerateLittleSnitchRules():
 
 	def __init__(self):
 		self.data 		= self.fetch_data()
+		print(self.data)
 		self.rules		= self.extract_hosts(self.data)
+		print(self.rules)
 		self.generate_ruleset(self.rules)
 
 	def fetch_data(self):
@@ -27,7 +28,7 @@ class GenerateLittleSnitchRules():
 		#----------------------------------------------------------------------
 
 		u = requests.get(self.HOST_FILE_URL)
-		return u.text
+		return u.text.splitlines()
 
 	def extract_hosts(self, data):
 		#----------------------------------------------------------------------
@@ -37,7 +38,7 @@ class GenerateLittleSnitchRules():
 		#----------------------------------------------------------------------
 
 		# Only keep hostnames that follow 0.0.0.0, while removing trailing comments.
-		pattern = re.compile("^0.0.0.0 ([^#]*)(#.*)?")
+		pattern = re.compile("^127.0.0.1 ([^#]*)(#.*)?")
 
 		rules = []
 
@@ -59,7 +60,7 @@ class GenerateLittleSnitchRules():
 
 		data = {}
 		data["name"] = "Block adware and malware"
-		data["description"] = "Little snitch rules to block adware and malware websites. Host lists from Steven Black."
+		data["description"] = "Little snitch rules to block adware and malware websites. Host lists from vokins."
 		data["rules"] = self.rules
 
 		# Write JSON to file and download
