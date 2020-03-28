@@ -59,7 +59,7 @@ class GenerateLittleSnitchRules():
 		#----------------------------------------------------------------------
 
 		data = {}
-		data["name"] = "Block adware and malware"
+		data["name"] = "Block Chinese Adware and Malware"
 		data["description"] = "Little snitch rules to block adware and malware websites. Host lists from vokins."
 		data["rules"] = self.rules
 
