@@ -3,9 +3,9 @@
 This repository utilizes the vokins-vhost host list of Chinese ad servers which are missing in the famous lists of Steve Black.
 
 This repository is gratefully using the resources of these open source heroes:
-- [yHosts of vokins](https://github.com/vokins/yhosts/)
+- [yHosts of VeleSila](https://github.com/VeleSila/yhosts/)
 - [Little Snitch rule groups of Steve Black's hosts file (I gratefully used the converter script here)](https://github.com/naveednajam/Little-Snitch---Rule-Groups)
-- 
+-
 
 ## Subscribe to the Little Snitch rules
 Please read here: https://help.obdev.at/littlesnitch/lsc-rule-group-subscriptions

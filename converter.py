@@ -11,7 +11,7 @@ import json
 
 class GenerateLittleSnitchRules():
 
-	HOST_FILE_URL 	= "https://raw.githubusercontent.com/vokins/yhosts/master/hosts"
+	HOST_FILE_URL 	= "https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts.txt"
 	OUT_FILENAME 	= "chinese_adware_malware_list.lsrules"
 
 	def __init__(self):
